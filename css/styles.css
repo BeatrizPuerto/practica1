@@ -1,3 +1,14 @@
+/* parecido a declarar variables globales en java  */
+:root {
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --secundario: #26939f;
+    --gris: #757575;
+
+}
+
+
 html {
     font-size: 62.5%;
 }
@@ -18,4 +29,43 @@ body {
 /* Editar espeificamente la palabra delevoper*/
 .titulo span {
     font-size: 2rem;
+}
+
+.navegcion-principal    {
+    background-color: var(--secundario);
+    /* margen es por fuera y padding es por dentro */
+   /* padding-top: 1rem;
+    padding-bottom: 1rem; */
+    
+    display: flex;/*flexbox esta diseñado para alinear elementos en tus diseños*/
+    /*justify-content para filas / align-items es para columnas (flex-direction)*/
+    justify-content:space-between ;
+    font-weight:bold ;
+    font-size: 2rem;
+}
+.navegcion-principal a {
+    color: var(--blanco);
+    text-decoration: none;
+    padding: 1rem;
+}
+.navegcion-principal a:hover{
+    background-color:var(--primario);
+    color: var(--oscuro);
+}
+
+
+
+
+
+.contenedor {
+    width: 120rem; /* 1200 pixeles porque 1 rem = 10 px. Unidad de medida*/
+    /* margin-top: 0
+    margin-bottom: 0
+    margin-right: 0
+    margin-lefth:0*/
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--secundario);
 }

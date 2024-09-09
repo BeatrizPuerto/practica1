@@ -3,6 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- uso responsivo para el cambio de pantalla -->
+
+    <!-- Importancion de la normalzacion-->
+    <link rel="'preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css"> <!-- VIncular CSS al HTML-->
+
+    <!-- Importacion de google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+
+    <!-- Enlace al CSS personalizado -->
     <link rel="'preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css"> <!-- VIncular CSS al HTML-->
     <title>Document</title>
@@ -10,14 +21,18 @@
 <body>
     <!-- es lo que se ve dentro de la pagina web-->
      <header>
-     <h1 class="titulo">Beatriz Puerto <span>Developer</span></h1> <!--es mi nombre-->
+     <h1 class="titulo">Beatriz Puerto <span>Developer</span></h1>
     </header>
-     <nav>
+ 
+
+    <div class = "nav-bg">
+      <nav class = "navegcion-principal contenedor">
       <a href="#">Inicio</a>
       <a href="#">Sobre mi</a>
       <a href="#">Clientes</a>
       <a href="#">Contacto</a>
-     </nav>
+        </nav>
+     </div>
 
 
 
@@ -28,7 +43,7 @@
       <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
       <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
     </svg>
-     <p>Mérida, Yucatán</p> 
+     <p>Mérida, Yucatán</p>
     </section>
 
     <main>
@@ -115,7 +130,7 @@
         </form>
     </section>
     <footer>
-     <p>Todo los derechos reservados ©. Beatriz Puerto 2024</p>
+     <p>Todo los derechos reservados ©. Beatriz Guadalupe Puerto 2024</p>
     </footer>
 </body>
 </html>
