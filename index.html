@@ -6,9 +6,9 @@
 
     <!-- Importancion de la normalzacion-->
     <link rel="'preload" href="css/normalize.css" as="style">
-    <link rel="stylesheet" href="css/normalize.css"> <!-- adapta a diferentes navegadores o pantallas>
+    <link rel="stylesheet" href="css/normalize.css"> <!-- VIncular CSS al HTML-->
 
-    <!-- Importacion de google fonts--> 
+    <!-- Importacion de google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
@@ -16,45 +16,45 @@
     <!-- Enlace al CSS personalizado -->
     <link rel="'preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css"> <!-- VIncular CSS al HTML-->
-    <title>Document</title>
+    <title>Beatriz Puerto Chuc</title>
 </head>
 <body>
     <!-- es lo que se ve dentro de la pagina web-->
-     <header>
-     <h1 class="titulo">Beatriz Puerto <span>Developer</span></h1> <!-- esto es como el encabezado-->
+    <header>
+      <h1 class="titulo">Beatriz Puerto<span>Developer</span></h1>
     </header>
- 
 
-    <div class = "nav-bg"> <!-- envuelve la barra de navegacion-->
-      <nav class = "navegcion-principal contenedor"> <!-- crea un menu-->
-      <a href="#">Inicio</a> <!-- la a crea hipervinculos, enlaces para navegar a otras paginas-->
-      <a href="#">Sobre mi</a>
+
+    <div class = "nav-bg">
+      <nav class = "navegcion-principal contenedor">
+      <a href="#">Inicio</a>
+      <a href="#">Sobre mí</a>
       <a href="#">Clientes</a>
       <a href="#">Contacto</a>
         </nav>
-     </div>
+    </div>
 
+    <section class = "hero">
+      <div class = "contenido-hero">
+        <h2>Diseño y desarrollo web</h2>
 
-
-    <section class="hero">
-      <div class="contenido-hero">
-     <h2>Diseño y desarrollo web</h2>  <!-- titulo de segundo nivel, el svg es para colocar el icono y la p es como un parrafo-->
-     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-      <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
-      <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
-    </svg>
-     <p>Mérida, Yucatán</p>
-     <a href="#">Contactar</a>
+        <div class = "ubicacion">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <path d="M9 11a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" />
+              <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+            </svg>
+          <p>Mérida, Yucatán</p>
+          </div>
+        <a class = "boton" href = "#"> contactar</a>
       </div>
     </section>
 
-    <main> <!--define el contenido principal de la pagina-->
-     <h2> Mis servicios</h2> <!--otro titulo de segundo nivel-->
-
-      <section> <!-- agrupa secciones de contenido relacionadas-->
-        <h3>Diseño web</h3>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <main>
+      <h2> Mis servicios</h2>
+        <section>
+          <h3>Diseño web</h3>
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
           <path d="M12 21a9 9 0 0 1 0 -18c4.97 0 9 3.582 9 8c0 1.06 -.474 2.078 -1.318 2.828c-.844 .75 -1.989 1.172 -3.182 1.172h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" />
           <path d="M8.5 10.5m-1 0a1 1 0 1 0 2 0a1 1 0 1 0 -2 0" />
@@ -66,9 +66,8 @@
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptate natus animi unde voluptatum, commodi, sint modi aperiam quam deleniti vitae ex velit quod voluptates. Quod voluptate aliquid eligendi ipsa laudantium.
         </p>
       </section>
-
-     <section>
-      <h3>Aplicaciones moviles</h3> <!-- hay 2 svg porque son 2 iconos luego esta la p para el parrafo-->
+    <section>
+      <h3>Aplicaciones moviles</h3>
       <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
         <path d="M4 10l0 6" />
@@ -103,8 +102,7 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum blanditiis nam veritatis, quae error voluptatum illum hic aspernatur. Quibusdam dignissimos ipsam repellendus quae maiores vel sint deserunt quia aliquid eum?
       </p>
     </section>
-
-    </main> <!--define el contenido de la pagina principal-->
+    </main>
     <section>
         <h2>Contacto</h2>
         <!-- Crear Formulario. Peticiones HTTP-->
@@ -113,30 +111,30 @@
                 <legend>
                     LLENA TUS DATOS DE Contacto </legend>
                     <div> 
-                        ><label> Nombre</label> <!-- Etiqueta-->
-                        <input type="text" placeholder="Tu nombre"> <!--campo de entrada de texto-->
+                        <label> Nombre</label> <!-- Etiqueta-->
+                        <input type="text" placeholder="Tu nombre">
                     </div>
                     <div> 
                         <label> Telefono</label> <!-- Etiqueta-->
-                        <input type="tel" placeholder="Tu telefono"> <!-- type es para texto tipo numeros, placeholder es el texto de marcador-->
+                        <input type="tel" placeholder="Tu telefono">
                     </div>
                     <div> 
                         <label> Correo</label> <!-- Etiqueta-->
-                        <input type="email" placeholder="Tu correo"> <!--entarada de gmail-->
+                        <input type="email" placeholder="Tu correo">
                     </div>
                     <div> 
                         <label> Mensaje</label> <!-- Etiqueta-->
-                        <textarea></textarea> <!--para textos amplios-->
+                        <textarea></textarea>
                     </div>
 
                     <div>
-                        <input type="submit" value="Enviar"> <!-- el submit crea el boton y el value es para poner el texto dentro del boton-->
+                        <input type="submit" value="Enviar">
                     </div>
             </fieldset>
         </form>
     </section>
     <footer>
-     <p>Todo los derechos reservados ©. Beatriz Guadalupe Puerto 2024</p>
+      <p>Todo los derechos reservados ©. Beatriz Puerto 2024</p>
     </footer>
 </body>
 </html>
