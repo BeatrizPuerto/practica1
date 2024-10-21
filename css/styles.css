@@ -1,75 +1,40 @@
-/* parecido a declarar variables globales en java  */
+/* parecido a declarar variables globales en java */
 :root {
     --blanco: #ffffff;
     --oscuro: #212121;
     --primario: #ffc107;
     --secundario: #26939f;
     --gris: #757575;
-    --gris_claro: #b6b6b6 /* Se agrego b6b6b6b6 */
-
+    --gris_claro: #b6b6b6; /* Se agregó b6b6b6 */
 }
 
-/* llama a un elemento o etiqueta de HTML */
-/* Truco para uniformidad entre navegadores*/
+/* Truco para uniformidad entre navegadores */
 html {
     font-size: 62.5%;
 }
 
 body {
     font-size: 16px;
-    font-family: 'Krub', sans-serif; /* Se modifica el tipo de letra*/
-    background-image: linear-gradient(
-        to top, var(--gris) 0%, var(--blanco) 100% 
-    );
-
+    font-family: 'Krub', sans-serif; /* Se modifica el tipo de letra */
+    background-image: linear-gradient(to top, var(--gris) 0%, var(--blanco) 100%);
 }
 
-/* Se aplica desde 0 pixeles */
-/*body {
-    background-color: bisque;
-} */
-
-/* Recomendado 
-480 para moviles
-768 para tables
-*/
-
-/*@media (min-width: 480px) {
+/* Recomendado para diferentes dispositivos */
+@media (min-width: 480px) {
     body {
-        /* background-color: ; 
+        /* background-color: ; */
     }
 }
 
-/*@media (min-width: 768px) {
+@media (min-width: 768px) {
     body {
         background-color: cornflowerblue;
     }
-} */
+}
 
-
-
-/* Comentatios*/
-/* Hace referencia a las clases*/
-
-/*.titulo{
-    text-align: center;
-    font-size: 3.8rem;
-
-} */
-
-/* Editar espeificamente la palabra delevoper
-.titulo span {
-    font-size: 2rem;
-} */
-
-.navegcion-principal    {
-    /*background-color: var(--secundario);
-    /* margen es por fuera y padding es por dentro */
-    /* padding-top: 1rem;
-    padding-bottom: 1rem; */
-   /* padding: 1rem; */
-    display: flex; /* Flexbox esta diseniado para alinear elementos en tus disenio */
-    /* justify-content para FILAS / aling-items es para COLUMNAS (flex-direction) */
+/* Navegación principal */
+.navegcion-principal {
+    display: flex;
     justify-content: space-between;
     font-weight: bold;
     font-size: 2rem;
@@ -79,32 +44,25 @@ body {
 
 @media (min-width: 768px) {
     .navegcion-principal {
-        flex-direction: row; /* alinear en filas */
+        flex-direction: row; /* Alinear en filas */
         justify-content: space-between;
-
     }
 }
 
-
 .navegcion-principal a {
     color: var(--blanco);
-    text-decoration: none; /*remueve el estilo subrayado en el texto */
+    text-decoration: none;
     padding: 1rem;
 }
 
-
-/* Al poner el cursos en el hipervinculo*/
-.navegcion-principal a:hover{
+.navegcion-principal a:hover {
     background-color: var(--primario);
     color: var(--oscuro);
-} 
+}
 
+/* Contenedor */
 .contenedor {
-    max-width: 120rem; /* 1200 pixeles porque 1 rem = 10 px. Unidad de medida*/
-    /* margin-top: 0
-    margin-bottom: 0
-    margin-right: 0
-    margin-lefth:0*/
+    max-width: 120rem; /* 1200 pixeles porque 1 rem = 10 px */
     margin: 0 auto;
 }
 
@@ -112,39 +70,33 @@ body {
     background-color: var(--secundario);
 }
 
+/* Hero */
 .hero {
-    background-image: url(../img/hero.jpg); /* ../ es para regresar un nivl del directorio ya que la carpeta img esta afuera de css */
-    background-repeat: no-repeat; /* Sirve para evitar la repeticion de la imagen cuamd es pequenio*/
-    background-size: cover; /* Sirve para cubrir la imagen con todo el tamanio posible */
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 450px;
     position: relative;
-
-
 }
 
 .contenido-hero {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.7); /* */
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     height: 100%;
-    /* Alinear el texto vertical y horinzontalmente */
-    display: flex; /* Ayuda a disponer a todos los elementos */
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /color: var(--blanco); / Mejor usar una varibale antes*/
-
+    color: var(--blanco);
 }
-
-/* En el padre la position debe ser relative y el hijo en este caso .contenido-hero debe se position
-/* absolute */
 
 .contenido-hero p,
 .contenido-hero h2 {
     color: var(--blanco);
 }
 
-/* Tipografias */
+/* Tipografías */
 h1 {
     font-size: 3.8rem;
 }
@@ -178,29 +130,66 @@ h1, h2, h3 {
     font-size: 18px;
 }
 
+/* Botón */
 .boton {
-    display: inline-block;
-    padding: 10px 40px;
-    margin-top: 15px;
+    padding: 4rem, 3rem;
+    margin-top: 2rem;
     background-color: #26939f;
     color: white;
-    text-decoration: none; /* Quita el subrayado */
+    text-decoration: none;
     border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s ease;
-    font-family: 'Krub', sans-serif;   
-    text-transform: uppercase; /* Poner el texto en mayuscula*/
-    width: 90%;
+    font-family: 'Krub', sans-serif;
+    text-transform: uppercase;
     text-align: center;
+    width: 10rem;
+    height: 2rem;
 }
 
 .boton:hover {
     background-color: var(--primario);
-    color: var(--oscuro)
+    color: var(--oscuro);
 }
 
 @media (min-width: 768px) {
     .boton {
-        width: auto; /* Se adapta el boton a la pantalla*/
+        width: auto;
     }
+}
+
+/* Servicios */
+@media (min-width: 768px) {
+    .servicios {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 1rem;
+    }
+}
+
+/* Centrar iconos */
+.servicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicios h3 {
+    color: var(--secundario);
+    font-weight: normal;
+}
+
+p {
+    text-align: center;
+    line-height: 2;
+}
+
+.iconos {
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--primario);
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
